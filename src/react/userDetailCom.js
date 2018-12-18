@@ -11,6 +11,8 @@ const UserDetail = (props) => {
     return (
         <div>
             <h1> Name : {props.list.name}</h1>
+            {/* <h1> Name : {props.list.ok.name}</h1> */}
+            {/* <h1> Name : {props.list.obj.name}</h1> */}
             <h3>Age : {props.list.age}</h3>
             <h3>City : {props.list.city}</h3>
             <h3>Hobby : {props.list.hobby}</h3>
