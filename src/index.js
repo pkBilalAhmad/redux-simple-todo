@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
-import { incrementReducer } from './recuers/increment';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-// import { MyState } from './recuers/increment'
+import { userListRed } from './recuers/userlistRed'
+import userDetail from './recuers/userDetail';
+
 
 
 const rootReducer = combineReducers({
-    // MyState,
-    red: incrementReducer
+    list: userListRed,
+    detail: userDetail
 })
 
 const store = createStore(rootReducer);
