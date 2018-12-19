@@ -1,12 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const UserList = (props) => {
-    if(!props.list){
-        return (
-            <h2>Pleas Select User</h2>
-        )
-    }
+const UserList = (props) => {    
     return (
         <div>
             <ul>
