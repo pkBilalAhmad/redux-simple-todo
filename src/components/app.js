@@ -1,11 +1,9 @@
 import React from 'react';
-import Counter from './react/counter';
-
-
+import TodoItem from './todo-item'
 
 const App = () => (
     <div>        
-        <Counter/>
+        <TodoItem/>
     </div>
 )
 

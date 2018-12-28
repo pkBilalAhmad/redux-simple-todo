@@ -1,31 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
-import incrementRed from './reducer/increment';
-import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import { store } from './store/store'
+import App from './components/app'
 
-
-
-const store = createStore(combineReducers({
-    secRed: incrementRed,
-    
-}));
-
-const root = document.getElementById('root')
-
-
-class CounterIndex extends React.Component {
+class Todos extends React.Component {
     render() {
         return (
             <Provider store={store}>
+                <App />
 
-                <div>
-                    <App />
-                </div>
             </Provider>
-        );
+        )
     }
 }
 
-ReactDOM.render(<CounterIndex />, root)
+ReactDOM.render(<Todos />, root)
